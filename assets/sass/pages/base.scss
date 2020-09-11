@@ -1,0 +1,48 @@
+.content {
+
+  .go-home {
+    padding: 10pt;
+    width: min-content;
+    color: white;
+  }
+
+  .heading {
+    text-align: center;
+
+    margin-top: 15pt;
+
+    @include respond-to('medium') {
+      margin-top: 40pt;
+    }
+
+    .avatar {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20pt;
+
+      img {
+        width: 100pt;
+        height: 100%;
+        border-radius: 400px;
+
+        @include respond-to('small') {
+          width: 120pt;
+        }
+
+        @include respond-to('medium') {
+          width: 180pt;
+        }
+      }
+    }
+  }
+
+  .subtitle {
+    font-size: 12pt;
+
+    @include respond-to('medium') {
+      font-size: initial;
+    }
+  }
+}

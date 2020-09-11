@@ -1,0 +1,96 @@
+
+h1, h2, h3, h4, h5, h6, span, p, button {
+  color: $text-color;
+  margin: unset;
+  padding: unset;
+}
+
+a {
+  color: $link-color;
+}
+
+h1, .heading-1 {
+  font-size: 24pt;
+}
+
+h2, .heading-2 {
+  font-size: 20pt;
+}
+
+h3, .heading-3 {
+  font-size: 18pt;
+}
+
+h4, .heading-4 {
+  font-size: 16pt;
+}
+
+h5, .heading-5 {
+  font-size: 14pt;
+}
+
+h6, .heading-6 {
+  font-size: 12pt;
+}
+
+
+h1, .heading-1,
+h2, .heading-2,
+h3, .heading-3,
+h4, .heading-4,
+h5, .heading-5,
+h6, .heading-6 {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+p, span, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+p, span, button {
+  font-size: 12pt;
+}
+
+@respond-to ('medium') {
+  h1, .heading-1 {
+    font-size: 56pt;
+  }
+
+  h2, .heading-2 {
+    font-size: 48pt;
+  }
+
+  h3, .heading-3 {
+    font-size: 32pt;
+  }
+
+  h4, .heading-4 {
+    font-size: 24pt;
+  }
+
+  h5, .heading-5 {
+    font-size: 18pt;
+  }
+
+  h6, .heading-6 {
+    font-size: 12pt;
+  }
+
+
+  h1, .heading-1,
+  h2, .heading-2,
+  h3, .heading-3,
+  h4, .heading-4,
+  h5, .heading-5,
+  h6, .heading-6 {
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  p, span, button {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  p, span, button {
+    font-size: 14pt;
+  }
+}

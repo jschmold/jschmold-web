@@ -1,0 +1,27 @@
+button, .button {
+  outline: unset;
+  border: unset;
+  background-color: unset;
+}
+
+button.outline,
+.button.outline {
+  height: 34pt;
+  border: 2pt solid white;
+  border-radius: $border-radius;
+}
+
+a.button-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: unset;
+  color: inherit;
+
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+}
