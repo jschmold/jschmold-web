@@ -10,7 +10,7 @@
   }
 
   button + button {
-    margin-top: 10pt;
+    margin-top: 5pt;
   }
 
   @include respond-to('medium') {
@@ -29,5 +29,15 @@
       width: 156pt;
       margin: 8pt;
     }
+  }
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20pt;
+  .social-link + .social-link {
+    margin-left: 10pt;
   }
 }

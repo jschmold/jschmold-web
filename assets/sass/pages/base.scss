@@ -9,7 +9,9 @@
   .heading {
     text-align: center;
 
-    margin-top: 15pt;
+    @include respond-to('small') {
+      margin-top: 15pt;
+    }
 
     @include respond-to('medium') {
       margin-top: 40pt;

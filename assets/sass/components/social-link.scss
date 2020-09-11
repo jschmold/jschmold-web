@@ -1,0 +1,17 @@
+.social-link {
+  text-decoration: unset;
+  color: white;
+  width: 24pt;
+  height: 24pt;
+  display: inline-block;
+
+  img {
+    width: auto;
+    height: 100%;
+    margin: auto auto;
+  }
+}
+
+.social-link.linked-in {
+  filter: brightness(255);
+}
