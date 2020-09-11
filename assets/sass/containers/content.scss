@@ -1,19 +1,25 @@
 
-body {
-  margin: unset;
+html {
   background-image: url("./img/background.jpg");
   background-repeat: no-repeat;
-  backdrop-filter: blur(10px);
   background-size: cover;
   background-position: top;
+}
+
+body {
+  margin: unset;
   min-height: 100vh;
   min-width: 180px;
+  background-color: rgba(36, 36, 36, 0.6);
+  backdrop-filter: blur(10px);
 
   .content {
-    min-height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: rgba(36, 36, 36, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20pt;
+    padding-bottom: 20pt;
   }
 }
