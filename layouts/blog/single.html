@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<div class="blog-post">
+
+  <article>
+
+    {{ if .Params.header }}
+    <div class="header">
+
+      {{ with .Params.header.image }}
+      <div class="header-image">
+        <img src="{{ . }}" alt="">
+      </div>
+      {{ end }}
+
+      {{ with .Params.header.title }}
+      <div class="header-title">
+        <h2 class="strip-margins strip-padding">{{ . }}</h2>
+      </div>
+      {{ end }}
+
+      {{ with .Lastmod }}
+      <div class="last-mod">
+        {{ . }}
+      </div>
+      {{ end }}
+
+    </div>
+    {{ end }}
+
+
+    {{ .Content }}
+  </article>
+
+</div>
+
+{{ end }}

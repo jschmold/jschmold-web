@@ -1,4 +1,5 @@
 ---
-title: "Jonathan Schmold"
-subtitle: "Programmer | Philosopher | Nerd"
+meta:
+    title: "Jonathan Schmold"
+    subtitle: "Programmer | Philosopher | Nerd"
 ---
