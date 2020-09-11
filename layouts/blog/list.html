@@ -6,7 +6,10 @@
   </article>
 
 
-  {{ range first 10 .Pages }}
+  {{ $posts := .Pages.ByDate.Reverse }}
+  {{ $postCount := len $posts }}
+
+  {{ range first 10 $posts }}
 
     <article>
       <h2>{{ .Title }}</h2>
@@ -18,6 +21,12 @@
 
     </article>
 
+  {{ end }}
+
+  {{ if eq $postCount 0 }}
+    <div class="centered">
+      <p>There doesn't appear to be any posts just yet</p>
+    </div>
   {{ end }}
 
 
