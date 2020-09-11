@@ -3,27 +3,6 @@
 <div class="single">
 
   <article>
-
-    <div class="header">
-
-      {{ with .Params.image }}
-      <div class="header-image">
-        <img src="{{ . }}" alt="">
-      </div>
-      {{ end }}
-
-      {{ with .Params.title }}
-      <div class="header-title">
-        <h1 class="strip-margins strip-padding">{{ . }}</h1>
-      </div>
-      {{ end }}
-
-      <div class="last-modified">
-        {{ .Lastmod.Format "Monday, January 2, 2006" }}
-      </div>
-
-    </div>
-
     {{ .Content }}
 
     <div class="traversal-buttons">

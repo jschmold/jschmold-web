@@ -1,15 +1,28 @@
 nav {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: min-content;
   color: white;
   position: sticky;
-  top: 10pt;
-  left: 10pt;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5pt;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0 0pt 4pt 4pt;
 
   a {
     white-space: nowrap;
+    margin-bottom: 0;
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+
+    &:visited {
+      color: white;
+      text-decoration: none;
+    }
   }
 
   a + a {
