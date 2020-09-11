@@ -6,7 +6,8 @@ body {
   backdrop-filter: blur(10px);
   background-size: cover;
   background-position: top;
-  min-width: 320px;
+  min-height: 100vh;
+  min-width: 180px;
 
   .content {
     min-height: 100vh;

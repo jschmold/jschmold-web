@@ -9,11 +9,8 @@
     height: 30pt;
   }
 
-
-  @include respond-to('small') {
-    button + button {
-      margin-top: 10pt;
-    }
+  button + button {
+    margin-top: 10pt;
   }
 
   @include respond-to('medium') {
