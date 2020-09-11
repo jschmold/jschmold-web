@@ -1,9 +1,20 @@
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: min-content;
   color: white;
   position: sticky;
   top: 10pt;
   left: 10pt;
+
+  a {
+    white-space: nowrap;
+  }
+
+  a + a {
+    margin-left: 10pt;
+  }
 }
 
 .content {

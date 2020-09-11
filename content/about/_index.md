@@ -1,4 +1,4 @@
 ---
-title: "About Me"
-type: "about"
+meta:
+    title: "About Me"
 ---

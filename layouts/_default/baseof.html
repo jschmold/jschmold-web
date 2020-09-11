@@ -6,14 +6,16 @@
   <body>
 
     <nav class="navigation">
+      {{ block "pre-navigation" .}}
+      {{ end }}
       <a class="button-link heading-6" href="/">Home</a>
+      {{ block "navigation" . }}
+      {{ end }}
     </nav>
 
     <div class="content">
 
       {{ partial "base/heading.html" . }}
-
-      {{ .Page.Content }}
 
       {{ block "main" . }}
       {{ end }}

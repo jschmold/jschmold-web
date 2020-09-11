@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="blog">
+
+  <article>
+    <p class="strip-margins strip-padding">I put my random musings and thoughts about the world here. Philosophy, programming, learning experiences, things of interests, and so on</p>
+  </article>
+
+
+  {{ $posts := .Pages.ByDate.Reverse }}
+  {{ $postCount := len $posts }}
+
+  {{ range first 10 $posts }}
+
+    <article>
+      <h2>{{ .Title }}</h2>
+      {{ with .Params.Description }}
+        <p> {{ . }}</p>
+      {{ end }}
+
+      <a href="{{ .RelPermalink }}">Visit</a>
+
+    </article>
+
+  {{ end }}
+
+  {{ if eq $postCount 0 }}
+    <div class="centered">
+      <p>There doesn't appear to be any posts just yet</p>
+    </div>
+  {{ end }}
+
+
+</div>
+{{ end }}

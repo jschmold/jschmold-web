@@ -109,3 +109,18 @@ p {
     font-size: 14pt;
   }
 }
+
+
+/** Text helper classes */
+
+.centered {
+  text-align: center;
+}
+
+.strip-margins {
+  margin: unset;
+}
+
+.strip-padding {
+  padding: unset;
+}

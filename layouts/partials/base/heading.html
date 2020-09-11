@@ -4,11 +4,11 @@
     <img src="/img/profile-image.jpg" alt="">
   </div>
 
-  {{ with .Params.title }}
+  {{ with .Params.meta.title }}
     <h1 class="title">{{ . }}</h2>
   {{ end }}
 
-  {{ with .Params.subtitle }}
+  {{ with .Params.meta.subtitle }}
     <h4 class="subtitle">{{ . }}</h5>
   {{ end }}
 

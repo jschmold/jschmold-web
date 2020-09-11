@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+<div class="blog-post">
+
+  <article>
+
+    <div class="header">
+
+      {{ with .Params.image }}
+      <div class="header-image">
+        <img src="{{ . }}" alt="">
+      </div>
+      {{ end }}
+
+      {{ with .Params.title }}
+      <div class="header-title">
+        <h1 class="strip-margins strip-padding">{{ . }}</h1>
+      </div>
+      {{ end }}
+
+      <div class="last-modified">
+        {{ .Lastmod.Format "Monday, January 2, 2006" }}
+      </div>
+
+    </div>
+
+    {{ .Content }}
+
+    <div class="traversal-buttons">
+      {{ $data := where .Site.RegularPages "Section" .Section }}
+      {{ $pages := $data.ByDate.Reverse }}
+      {{ with $pages.Prev . }}
+      <button class="outline prev">
+        <a class="button-link" href="{{ .RelPermalink }}">
+        Previous Post
+        </a>
+      </button>
+      {{ end }}
+
+      {{ with $pages.Next . }}
+      <button class="outline next">
+        <a class="button-link" href="{{ .RelPermalink }}">
+        Next Post
+        </a>
+      </button>
+      {{ end }}
+    </div>
+
+  </article>
+
+</div>
+
+{{ end }}
+
+{{ define "pre-navigation" }}
+  <a class="button-link heading-6" href="..">Go Back</a>
+{{ end }}
