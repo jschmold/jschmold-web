@@ -1,5 +1,29 @@
 {{ define "main" }}
-  <div class="list">
-    List Template
-  </div>
+<div class="list">
+
+  {{ $posts := .Pages.ByDate.Reverse }}
+  {{ $postCount := len $posts }}
+
+  {{ range first 10 $posts }}
+
+    <article>
+      <h2>{{ .Title }}</h2>
+      {{ with .Params.Description }}
+        <p> {{ . }}</p>
+      {{ end }}
+
+      <a href="{{ .RelPermalink }}">Visit</a>
+
+    </article>
+
+  {{ end }}
+
+  {{ if eq $postCount 0 }}
+    <div class="centered">
+      <p>There doesn't appear to be anything here just yet</p>
+    </div>
+  {{ end }}
+
+
+</div>
 {{ end }}
