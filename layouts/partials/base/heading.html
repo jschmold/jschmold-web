@@ -1,0 +1,15 @@
+<div class="heading">
+
+  <div class="avatar">
+    <img src="/img/profile-image.jpg" alt="">
+  </div>
+
+  {{ with .Params.title }}
+    <h1 class="title">{{ . }}</h2>
+  {{ end }}
+
+  {{ with .Params.subtitle }}
+    <h4 class="subtitle">{{ . }}</h5>
+  {{ end }}
+
+</div>

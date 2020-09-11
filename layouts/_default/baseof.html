@@ -1,41 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      {{ .Title }}
-      {{ with .Params.title }}
-        - {{ . }}
-      {{ end }}
-    </title>
 
-    {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Minify | resources.Fingerprint }}
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-  </head>
+  {{ partial "base/head.html" . }}
 
   <body>
+
+    <nav class="navigation">
+      <a class="button-link heading-6" href="/">Home</a>
+    </nav>
+
     <div class="content">
-      <div class="go-home">
-        <a class="button-link heading-6" href="/">Home</a>
-      </div>
 
-      <div class="heading">
-        <div class="avatar">
-          <img src="/img/profile-image.jpg" alt="">
-        </div>
-
-        {{ with .Params.title }}
-          <h1 class="title">{{ . }}</h2>
-        {{ end }}
-
-        {{ with .Params.subtitle }}
-          <h4 class="subtitle">{{ . }}</h5>
-        {{ end }}
-
-      </div>
+      {{ partial "base/heading.html" . }}
 
       {{ .Page.Content }}
 
@@ -46,6 +22,8 @@
       {{ end }}
 
     </div>
+
+    {{ partial "base/scripts.html" . }}
   </body>
 
 </html>

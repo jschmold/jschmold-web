@@ -1,5 +1,5 @@
 
-h1, h2, h3, h4, h5, h6, span, p, button {
+h1, h2, h3, h4, h5, h6, span, p, button, article {
   color: $text-color;
   margin: unset;
   padding: unset;
@@ -11,26 +11,32 @@ a {
 
 h1, .heading-1 {
   font-size: 24pt;
+  margin-bottom: 18pt;
 }
 
 h2, .heading-2 {
   font-size: 20pt;
+  margin-bottom: 14pt;
 }
 
 h3, .heading-3 {
   font-size: 18pt;
+  margin-bottom: 12pt;
 }
 
 h4, .heading-4 {
   font-size: 16pt;
+  margin-bottom: 10pt;
 }
 
 h5, .heading-5 {
   font-size: 14pt;
+  margin-bottom: 8pt;
 }
 
 h6, .heading-6 {
   font-size: 12pt;
+  margin-bottom: 4pt;
 }
 
 
@@ -49,6 +55,11 @@ p, span, button {
 
 p, span, button {
   font-size: 12pt;
+}
+
+p {
+  margin-bottom: 8pt;
+  text-indent: 14pt;
 }
 
 @respond-to ('medium') {
@@ -84,6 +95,10 @@ p, span, button {
   h5, .heading-5,
   h6, .heading-6 {
     font-family: 'Noto Sans', sans-serif;
+  }
+
+  p {
+    margin-bottom: 8pt;
   }
 
   p, span, button {
