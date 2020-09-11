@@ -4,34 +4,34 @@
 
   <article>
 
-    {{ if .Params.header }}
     <div class="header">
 
-      {{ with .Params.header.image }}
+      {{ with .Params.image }}
       <div class="header-image">
         <img src="{{ . }}" alt="">
       </div>
       {{ end }}
 
-      {{ with .Params.header.title }}
+      {{ with .Params.title }}
       <div class="header-title">
-        <h2 class="strip-margins strip-padding">{{ . }}</h2>
+        <h1 class="strip-margins strip-padding">{{ . }}</h1>
       </div>
       {{ end }}
 
-      {{ with .Lastmod }}
-      <div class="last-mod">
-        {{ . }}
+      <div class="last-modified">
+        {{ .Lastmod.Format "Monday, January 22, 2006" }}
       </div>
-      {{ end }}
 
     </div>
-    {{ end }}
-
 
     {{ .Content }}
+
   </article>
 
 </div>
 
+{{ end }}
+
+{{ define "pre-navigation" }}
+  <a class="button-link heading-6" href="..">Go Back</a>
 {{ end }}

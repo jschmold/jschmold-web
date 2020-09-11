@@ -4,10 +4,12 @@
     position: relative;
     height: 120pt;
     width: 100%;
+    margin-bottom: 25pt;
 
     .header-image {
       overflow: hidden;
       position: relative;
+      height: 100%;
 
       img {
         width: 100%;
@@ -29,6 +31,12 @@
       align-items: center;
       justify-content: center;
       background: rgba(0, 0, 0, 0.6);
+    }
+
+    .last-modified {
+      position: absolute;
+      bottom: 10pt;
+      right: 10pt;
     }
 
   }
