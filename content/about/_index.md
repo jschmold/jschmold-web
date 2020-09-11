@@ -1,4 +1,0 @@
----
-meta:
-    title: "About Me"
----

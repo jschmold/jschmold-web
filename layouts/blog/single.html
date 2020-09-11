@@ -7,15 +7,15 @@
     <div class="header">
 
       {{ with .Params.image }}
-      <div class="header-image">
-        <img src="{{ . }}" alt="">
-      </div>
+        <div class="header-image">
+          <img src="{{ . }}" alt="">
+        </div>
       {{ end }}
 
       {{ with .Params.title }}
-      <div class="header-title">
-        <h1 class="strip-margins strip-padding">{{ . }}</h1>
-      </div>
+        <div class="header-title">
+          <h1 class="strip-margins strip-padding">{{ . }}</h1>
+        </div>
       {{ end }}
 
       <div class="last-modified">
@@ -31,7 +31,7 @@
       {{ $pages := $data.ByDate.Reverse }}
       {{ with $pages.Prev . }}
       <button class="outline prev">
-        <a class="button-link" href="{{ .RelPermalink }}">
+        <a href="{{ .RelPermalink }}">
         Previous Post
         </a>
       </button>
@@ -53,5 +53,5 @@
 {{ end }}
 
 {{ define "pre-navigation" }}
-  <a class="button-link heading-6" href="..">Go Back</a>
+  <a href="..">Go Back</a>
 {{ end }}
