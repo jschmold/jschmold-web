@@ -5,9 +5,17 @@
 
   <body>
 
+    <div class="mobile-navigation">
+      <div class="nav-toggle">
+        <span>MENU</span>
+      </div>
+    </div>
+
     <nav class="navigation">
-      {{ block "pre-navigation" .}}
+
+      {{ block "pre-navigation" . }}
       {{ end }}
+
       <a href="/">Home</a>
       <a href="/about">About</a>
       <a href="/blog">Blog</a>

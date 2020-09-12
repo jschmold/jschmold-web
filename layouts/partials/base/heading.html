@@ -1,8 +1,10 @@
 <div class="heading">
 
-  <div class="avatar">
-    <img src="/img/profile-image.jpg" alt="">
-  </div>
+  {{ if not (eq .Params.hide_avatar true) }}
+    <div class="avatar">
+      <img src="/img/profile-image.jpg" alt="">
+    </div>
+  {{ end }}
 
   {{ with .Params.meta.title }}
     <h3 class="title">{{ . }}</h3>
