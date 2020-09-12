@@ -1,0 +1,44 @@
+.project-list {
+
+  article.project {
+    display: flex;
+    flex-direction: column;
+
+    .top-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10pt;
+
+      .icon {
+        display: none;
+        visibility: hidden;
+
+        @include respond-to ('small') {
+          display: block;
+          visibility: visible;
+          width: 36pt;
+          height: 36pt;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 5pt;
+
+          img {
+            height: auto;
+            width: 100%;
+          }
+        }
+
+        @include respond-to ('medium') {
+          width: 52pt;
+          height: 52pt;
+          margin-right: 15pt;
+        }
+      }
+    }
+
+    .nav-link {
+      text-align: right;
+    }
+  }
+}
