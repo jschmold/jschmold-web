@@ -25,4 +25,4 @@ I recently stumbled upon 2 separate philosophies that I am writing a book on. Th
 
 #### How can I contact you
 
-The best way to get a hold of me is via my [email](mailto:me@jonathanschmold.ca) or one of my social media handles. Facebook Messenger is by far the _easiest_ way to get a hold of me.
+The best way to get a hold of me is via my [email](mailto:me@jonathanschmold.ca) or one of my social media handles. [Facebook Messenger](https://www.facebook.com/jonathanschmold) is by far the _easiest_ way to get a hold of me.
