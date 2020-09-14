@@ -26,6 +26,8 @@
 
     {{ .Content }}
 
+    {{ partial "base" . }}
+
     <div class="traversal-buttons">
       {{ $data := where .Site.RegularPages "Section" .Section }}
       {{ $pages := $data.ByDate.Reverse }}

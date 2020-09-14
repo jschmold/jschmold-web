@@ -1,6 +1,15 @@
 .blog-post {
   padding-bottom: 20pt;
 
+  article {
+    padding: 25pt;
+  }
+
+  hr {
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+  }
+
   .header {
     position: relative;
     height: 120pt;

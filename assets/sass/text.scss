@@ -45,24 +45,30 @@ h2, .heading-2,
 h3, .heading-3,
 h4, .heading-4,
 h5, .heading-5,
-h6, .heading-6 {
+h6, .heading-6,
+button {
   font-family: 'Noto Sans', sans-serif;
 }
 
-p, span, button {
-  font-family: 'Roboto', sans-serif;
+p, span, article, a {
+  font-family: 'Asap', sans-serif;
 }
 
-p, span, button {
+p, span {
+  font-size: 14pt;
+}
+
+button {
   font-size: 12pt;
 }
 
 p {
   margin-bottom: 8pt;
   text-indent: 14pt;
+  line-height: 1.4em;
 }
 
-@respond-to ('medium') {
+@include respond-to ('medium') {
   h1, .heading-1 {
     font-size: 56pt;
   }
@@ -87,22 +93,9 @@ p {
     font-size: 12pt;
   }
 
-
-  h1, .heading-1,
-  h2, .heading-2,
-  h3, .heading-3,
-  h4, .heading-4,
-  h5, .heading-5,
-  h6, .heading-6 {
-    font-family: 'Noto Sans', sans-serif;
-  }
-
   p {
     margin-bottom: 8pt;
-  }
-
-  p, span, button {
-    font-family: 'Roboto', sans-serif;
+    line-height: 1.6em;
   }
 
   p, span, button {

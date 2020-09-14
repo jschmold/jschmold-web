@@ -1,3 +1,6 @@
 ---
 title: "Experience"
+type: "projects"
 ---
+
+

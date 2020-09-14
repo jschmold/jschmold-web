@@ -1,0 +1,26 @@
+.table-of-contents {
+
+  &.horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .content-item {
+      color: white;
+
+      a, a:visited, a:active {
+        color: inherit;
+      }
+    }
+
+    .content-item + .content-item {
+      margin-left: 5pt;
+
+      &:before {
+        content: "|";
+        color: white;
+      }
+    }
+  }
+}
