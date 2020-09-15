@@ -1,6 +1,7 @@
 ---
 title: Philosophy Book
 description: Joining two ancient philosophies, Taoism and Stoicism, for every day modern life.
+date: 2020-09-08T00:00:00-07:00
 ---
 
 # Background

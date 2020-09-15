@@ -2,6 +2,7 @@
 title: img-crop
 description: A javascript-only HTML Canvas image cropper
 link: https://github.com/jschmold/img-crop
+date: 2018-04-12T00:00:00-07:00
 ---
 
 # Background

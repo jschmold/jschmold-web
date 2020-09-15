@@ -2,6 +2,7 @@
 title: Basic Platformer
 description: A C++ and SFML platforming game to dabble in game development
 link: https://github.com/jschmold/basic-platformer
+date: 2019-01-09T00:00:00-07:00
 ---
 
 # Background

@@ -2,6 +2,7 @@
 title: Termichat Client
 description: Simple terminal-based websocket chat application to teach myself websockets
 link: "https://github.com/jschmold/termichat-client"
+date: 2019-08-16T00:00:00-07:00
 ---
 
 # Background

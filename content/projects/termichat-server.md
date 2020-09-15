@@ -2,6 +2,7 @@
 title: Termichat Server
 description: Simple terminal-based websocket chat application to teach myself websockets
 link: "https://github.com/jschmold/termichat-server"
+date: 2019-08-16T00:00:00-07:00
 ---
 
 # Background

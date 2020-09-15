@@ -2,6 +2,7 @@
 title: Node Sessions
 description: Me taking a crack at a session-oriented auth library
 link: "https://github.com/jschmold/node-sessions"
+date: 2018-08-28T00:00:00-07:00
 ---
 
 # Background

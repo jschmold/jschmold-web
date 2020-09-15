@@ -2,6 +2,7 @@
 title: EzFlags
 description: A bitwise flags package for Javascript that allows you to generate flags at runtime
 link: https://github.com/jschmold/ezflags
+date: 2018-02-18T00:00:00-07:00
 ---
 
 # Background
