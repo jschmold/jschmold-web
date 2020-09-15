@@ -1,0 +1,46 @@
+<article class="project">
+
+  <div class="top-row">
+
+    {{ $classlist := cond (eq .Params.dark_icon true) "dark" "" }}
+    {{ with .Params.icon }}
+    <div class="icon {{ $classlist }}">
+        <img src="{{ . }}" alt="">
+      </div>
+    {{ end }}
+
+    <div class="information">
+      <h4 class="title strip-margins strip-padding">{{ .Title }}</h4>
+      {{ with .Params.dates }}
+        {{ with .start }}
+        <span class="start-date">
+          {{ dateFormat "January 2, 2006" . }}
+        </span>
+        {{ end }}
+
+        <span class="connector">-</span>
+
+        {{ with .end }}
+          <span class="end-date">
+            {{ dateFormat "January 2, 2006" . }}
+          </span>
+        {{ end }}
+
+        {{ if eq .current true }}
+          <span class="end-date">Current</span>
+        {{ end }}
+
+      {{ end }}
+
+    </div>
+  </div>
+
+  {{ with .Params.Description }}
+    <span> {{ . }}</span>
+  {{ end }}
+
+  {{ if .Content }}
+  <a class="nav-link" href="{{ .RelPermalink }}">Click to Navigate</a>
+  {{ end }}
+
+</article>

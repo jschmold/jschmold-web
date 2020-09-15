@@ -1,6 +1,5 @@
 ---
 title: "Experience"
-type: "projects"
 ---
 
 

@@ -16,6 +16,10 @@ nav, .mobile-navigation {
   background-color: rgba(0, 0, 0, 0.8);
   position: sticky;
 
+  .nav-toggle {
+    cursor: pointer;
+  }
+
   @include respond-to('medium') {
     display: none;
     visibility: hidden;
@@ -33,6 +37,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  z-index: 1000;
 
   transform: translateX(-100%);
 
