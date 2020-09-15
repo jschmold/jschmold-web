@@ -18,17 +18,19 @@
         </div>
       {{ end }}
 
-      {{ if .Params.dates.end }}
-      <div class="last-modified">
-        {{ dateFormat "January 2, 2006" .Params.dates.start }} to {{ dateFormat "January 2, 2006" .Params.dates.end }}
-      </div>
-      {{ end }}
+      <div class="details">
+        {{ if .Params.dates.end }}
+        <div class="last-modified">
+          {{ dateFormat "January 2, 2006" .Params.dates.start }} to {{ dateFormat "January 2, 2006" .Params.dates.end }}
+        </div>
+        {{ end }}
 
-      {{ if not .Params.dates.end }}
-      <div class="last-modified">
-        {{ dateFormat "January 2, 2006" .Params.dates.start }} - Current
+        {{ if not .Params.dates.end }}
+        <div class="last-modified">
+          {{ dateFormat "January 2, 2006" .Params.dates.start }} - Current
+        </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
 
     {{ .Content }}
