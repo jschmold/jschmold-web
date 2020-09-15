@@ -18,34 +18,33 @@
         </div>
       {{ end }}
 
-      <div class="details">
-        <div class="last-modified">
-          {{ .Lastmod.Format "Monday, January 2, 2006" }}
-        </div>
+      {{ if .Params.dates.end }}
+      <div class="last-modified">
+        {{ dateFormat "January 2, 2006" .Params.dates.start }} to {{ dateFormat "January 2, 2006" .Params.dates.end }}
       </div>
+      {{ end }}
 
+      {{ if not .Params.dates.end }}
+      <div class="last-modified">
+        {{ dateFormat "January 2, 2006" .Params.dates.start }} - Current
+      </div>
+      {{ end }}
     </div>
 
     {{ .Content }}
 
-    {{ partial "base" . }}
-
     <div class="traversal-buttons">
       {{ $data := where .Site.RegularPages "Section" .Section }}
-      {{ $pages := $data.ByDate.Reverse }}
+      {{ $pages := $data.ByParam "order" }}
       {{ with $pages.Prev . }}
       <button class="outline prev">
-        <a href="{{ .RelPermalink }}">
-        Previous Post
-        </a>
+        <a class="button-link" href="{{ .RelPermalink }}">Previous</a>
       </button>
       {{ end }}
 
       {{ with $pages.Next . }}
       <button class="outline next">
-        <a class="button-link" href="{{ .RelPermalink }}">
-        Next Post
-        </a>
+        <a class="button-link" href="{{ .RelPermalink }}">Next</a>
       </button>
       {{ end }}
     </div>

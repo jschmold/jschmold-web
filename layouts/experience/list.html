@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="project-list">
 
-  {{ $posts := .Pages }}
+  {{ $posts := .Pages.ByParam "order" }}
   {{ $postCount := len $posts }}
 
   {{ range $posts }}
