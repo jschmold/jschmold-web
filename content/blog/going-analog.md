@@ -18,7 +18,7 @@ Here's what some of the tools I use now generally look like.
 | Tomighty / Marinara Timer     | Spinny baking timer     | Workflow        |
 
 
-I love technology, and I want to make that clear before I complain. I would not be a developer if I didn't love technology, and I've loved technology since I was a kid. But there are some things about it that I _**can't stand**_. Those things are emails, notifications, and apps being made "stupid". Every time you use a website you have to deal with modals asking you to "Subscribe" to their content, every app you register to seems to feel entitled to sending you _copious amounts of utter bullshit_ via notifications or emails, and a lot of apps are built to be so "stupid" that "anyone can use them", making them look like they have more features than they actually do.
+I love technology, and I want to make that clear before I complain. I would not be a developer if I didn't love technology, and I've loved technology since I was a kid. But there are some things about it that I _**can't stand**_. Those things are emails, notifications, and apps being made "stupid". Every time you use a website you have to deal with modals asking you to "Subscribe" to their content, every app you register to seems to feel entitled to sending you _copious amounts of spam_ via notifications or emails, and a lot of apps are built to be so "stupid" that "anyone can use them", making them look like they have more features than they actually do.
 
 I've tried a _lot_ of different softwares to get focused as an individual. On a team you no doubt require software, but as an individual do we really need all the sparkle? That's part of what my Going Analog journey is about.
 
@@ -55,7 +55,7 @@ So instead I use a big whiteboard where I can take a picture or distill it furth
 
 ### Tools I've tried
 
-Note: All tools are for me as an _individual_. I stress again, teams basically _require_ a software-based source of truth to operate efficiently.
+Note: All tools here are for me as an _individual_. I stress again, teams basically _require_ a software-based source of truth to operate efficiently.
 
 ###### Note Taking
 - Nebo
