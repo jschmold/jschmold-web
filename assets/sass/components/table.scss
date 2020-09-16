@@ -1,0 +1,17 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 4pt;
+  margin-top: 15pt;
+  margin-bottom: 15pt;
+
+  th {
+    padding: 10pt;
+    border: 1px solid white;
+  }
+
+  td {
+    padding: 4pt 10pt;
+    border: 1px solid white;
+  }
+}
