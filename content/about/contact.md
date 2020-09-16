@@ -16,4 +16,4 @@ If you are looking to have me join your team, feel free to contact me via email 
 
 #### General Inquiry
 
-The best way to get a hold of me is via my [email](mailto:me@jonathanschmold.ca) or one of my social media handles. [Facebook Messenger](https://www.facebook.com/jonathanschmold) is by far the _easiest_ way to get a hold of me. I am currently for hire, so if you need a programmer, give me a shout. Perhaps we can help each other?
+The best way to get a hold of me is via my [email](mailto:me@jonathanschmold.ca) or one of my social media handles. [Facebook Messenger](https://www.facebook.com/jonathanschmold) is by far the _easiest_ way to get a hold of me.
