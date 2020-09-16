@@ -1,24 +1,29 @@
 {{ define "main" }}
 
-{{ $pages := .Pages.ByTitle }}
+  {{ $pages := .Pages.ByTitle }}
+  <div class="table-of-contents horizontal">
+    {{ range $pages }}
+      <div class="content-item">
+        <a href="#{{ .Title }}">{{ .Params.section_name }}</a>
+      </div>
+    {{ end }}
+  </div>
 
-<div class="table-of-contents horizontal">
-  {{ range $pages }}
-    <div class="content-item">
-      <a href="#{{ .Title }}">{{ .Params.section_name }}</a>
-    </div>
-  {{ end }}
-</div>
+  <div class="about-me">
 
-<div class="about-me">
+    {{ range $pages }}
+      <div class="section blog-post" id="{{ .Title }}">
+        <article>{{ .Content }}</article>
+      </div>
+    {{ end }}
 
-  {{ range $pages }}
-    <div class="section blog-post" id="{{ .Title }}">
-      <article>{{ .Content }}</article>
-    </div>
-  {{ end }}
+    {{ .Content }}
+  </div>
 
-  {{ .Content }}
+{{ end }}
 
-</div>
+
+
+{{ define "footer" }}
+  {{ partial "social-links.html" }}
 {{ end }}
