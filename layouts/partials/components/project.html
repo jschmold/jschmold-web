@@ -1,4 +1,4 @@
-<article class="project">
+<article class="project" data-href="{{ .Permalink }}">
 
   <div class="top-row">
 
@@ -11,6 +11,7 @@
 
     <div class="information">
       <h4 class="title strip-margins strip-padding">{{ .Title }}</h4>
+
       {{ with .Params.dates }}
         {{ with .start }}
         <span class="start-date">

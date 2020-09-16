@@ -1,7 +1,9 @@
 import { Navigation } from './navigation';
+import * as href from  './href';
 
 document.addEventListener('DOMContentLoaded', () => {
   setupNavigation();
+  href.setupClickListeners();
 });
 
 

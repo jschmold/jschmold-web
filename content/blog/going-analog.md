@@ -1,5 +1,6 @@
 ---
 title: Going Analog
+description: My path of trying to detach from my feeds and mobile devices, resolve the constant app fatigue I experience, and create a system for myself to effectively manage my notes, plans, and tasks in any given moment.
 ---
 
 The past little while, I have started noticing a sort of electronic device fatigue. A fatigue in which despite how useful the digital tools at my disposal are, I still have a decreasing desire to actually use them because I am so _tired_. I've been finding myself increasingly drawn away from using software, toward using good ol' pen and paper. The effort involved in even booting up the multiple pieces of software I have on its own just sucks the life out of me completely. So I decided today that I'd go analog.

@@ -11,15 +11,14 @@
 
   {{ range first 10 $posts }}
 
-    <article>
-      <h2>{{ .Title }}</h2>
-      {{ with .Params.Description }}
-        <p> {{ . }}</p>
-      {{ end }}
+  <article class="blog-item" data-href="{{ .Permalink }}">
+    <h2>{{ .Title }}</h2>
+    {{ with .Params.Description }}
+      <p> {{ . }}</p>
+    {{ end }}
 
-      <a href="{{ .RelPermalink }}">Visit</a>
-
-    </article>
+    <a class="blog-link" href="{{ .RelPermalink }}">Read</a>
+  </article>
 
   {{ end }}
 
