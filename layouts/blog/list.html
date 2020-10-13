@@ -6,13 +6,13 @@
   </article>
 
 
-  {{ $posts := .Pages.ByDate.Reverse }}
+  {{ $posts := .Pages.ByDate }}
   {{ $postCount := len $posts }}
 
   {{ range first 10 $posts }}
 
   <article class="blog-item" data-href="{{ .RelPermalink }}">
-    <h2>{{ .Title }}</h2>
+    <h2>{{ .Title }} <span class="subtext">{{ .Lastmod.Format "Monday, January 2, 2006" }}</span></h2>
     {{ with .Params.Description }}
       <p> {{ . }}</p>
     {{ end }}

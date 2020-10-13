@@ -1,5 +1,6 @@
-import { Navigation } from './navigation';
 import * as href from  './href';
+
+import { Navigation } from './navigation';
 
 document.addEventListener('DOMContentLoaded', () => {
   setupNavigation();

@@ -1,6 +1,22 @@
 .blog-item {
   h2 {
     margin-bottom: 5pt;
+
+    display: flex;
+    flex-direction: column;
+
+    .subtext {
+      font-weight: 400;
+    }
+
+    @include respond-to('medium') {
+      flex-direction: row;
+      align-items: center;
+
+      .subtext {
+        margin-left: auto;
+      }
+    }
   }
 
   .blog-link {
