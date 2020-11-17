@@ -5,7 +5,7 @@ icon: "/img/steer.svg"
 order: 1
 dates:
     start: 2019-07-13T00:00:00-07:00
-    current: true
+    end: 2020-10-21T00:00:00-07:00
 ---
 
 ## Responsibilities
