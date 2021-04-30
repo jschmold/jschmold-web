@@ -3,7 +3,7 @@ title: "1-intro"
 section_name: "My Story"
 ---
 
-## Hi, I'm Jonathan!
+## Hi, I'm Rachael!
 
 I'm a young programmer who loves making things. At 24 I've been coding for the last 10 years of my life, and hope to be coding for as long as I live, whether that is as a hobby or as a career. I just can't get enough of programming, and I don't ever want to stop. I've taught myself everything I know, and will continue to learn as I progress through my career.
 
