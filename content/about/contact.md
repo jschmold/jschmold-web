@@ -16,4 +16,4 @@ I'm currently not looking for a new role, but check back later?
 
 #### General Inquiry
 
-The best way to get a hold of me is via my [email](mailto:me@jonathanschmold.ca) or one of my social media handles. [Facebook Messenger](https://www.facebook.com/jonathanschmold) is by far the _easiest_ way to get a hold of me.
+The best way to get a hold of me is via my [email](mailto:me@rachaeldawn.ca).
